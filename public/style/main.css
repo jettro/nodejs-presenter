@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+blockquote {
+    font-size: 24pt;
+    font-style: italic;
+    vertical-align: middle;
+    padding: 100px;
+    quotes: "\201C" "\201D";
+}
+
+blockquote:before {
+    content: open-quote;
+    font-weight: bold;
+}
+
+blockquote:after {
+    content: close-quote;
+    font-weight: bold;
+}
+
+#fullscreen {
+    min-height: 100%;
+}
+
+#title {
+    text-align: center;
+    font-size: 36pt;
+    padding: 20px;
+
+}
+
+#body {
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 40px;
+    vertical-align: middle;
+}
+
+#footer {
+    position: relative;
+    margin-top: -40px; /* negative value of footer height */
+    height: 40px;
+    clear: both;
+    text-align: center;
+}
+
+#commandline {
+    float: left;
+}
+
+#counter {
+    float: right;
+    padding-right: 20px;
+}

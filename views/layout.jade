@@ -1,0 +1,19 @@
+!!! 5
+html(lang="en")
+    head
+        title Nodejs presenter
+        link(href="/style/main.css", media="screen", rel="stylesheet", type="text/css")
+        script(src='/js/jquery-1.5.2.min.js')
+        script(src='/js/local.js')
+    body
+        div#fullscreen
+            - if(typeof(titleSlide) != "undefined")
+                div#title #{titleSlide}
+            div#body!= body
+        div#footer
+            - if(typeof(numSlide) != "undefined")
+                div#counter
+                    slide #{numSlide} from #{totalSlide}
+                div#commandline
+                    form(action="/slide/"+numSlide,method="POST")
+                        input(type="text", size="100", name="command", id="command")
