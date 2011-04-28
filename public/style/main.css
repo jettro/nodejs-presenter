@@ -5,7 +5,7 @@ html, body {
 }
 
 blockquote {
-    font-size: 24pt;
+    font-size: 48pt;
     font-style: italic;
     vertical-align: middle;
     padding: 100px;
@@ -22,6 +22,32 @@ blockquote:after {
     font-weight: bold;
 }
 
+ul {
+    text-align:left;
+    list-style-image:url("/images/navigate_check.png");
+    padding:100px;
+    font-size: 24pt;
+}
+
+ul li {
+    padding-left:20px;
+    vertical-align:top;
+}
+
+ul li a {
+    vertical-align:top;
+    color:#00008b;
+}
+
+.heading {
+    font-size:16pt;
+}
+
+img.shadow {
+    box-shadow: 10px 10px 5px #888;
+    margin-top:20px;
+}
+/* Positioning the different components */
 #fullscreen {
     min-height: 100%;
 }

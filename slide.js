@@ -2,7 +2,13 @@ var slides = [];
 function Slide() {
     slides.push("Creating a presentation with Node.js",
             "Goal",
-            "Requirements");
+            "Requirements",
+            "Technology",
+            "Configure url handling",
+            "Handle requests",
+            "View content",
+            "The Future",
+            "Questions");
 }
 
 Slide.prototype.index = function(req,res) {

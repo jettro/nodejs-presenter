@@ -11,7 +11,6 @@ app.configure(function() {
     app.set('view options', { layout: 'layout' });
     app.use(express.methodOverride());
     app.use(express.static(pub));
-//    app.use(express.logger());
     app.use(express.bodyParser());
 });
 
