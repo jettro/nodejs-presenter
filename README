@@ -1,0 +1,15 @@
+With this project I want to create a very basic web based presentation application. No I am not going to recreate Keynote or Powerpoint. I want this to be a very command line driven presentation application.
+
+Features
+- Create a base template with headers and footers
+- Add the option to apply another template to a slide
+- Add command line interface on every page to interact with the slides. Initial commands available are:
+  - Next slide
+  - Previous slide
+  - Goto slide
+- Add basic elements for a slide
+  - Bullet list
+  - Title
+  - image
+  - table
+  - link
