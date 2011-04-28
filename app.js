@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
 app.get('/slide/:id', slide.index);
 app.post('/slide/:id', slide.command);
 
-app.listen(8008);
+app.listen(8018);
 console.log('Express server started on port %s', app.address().port);
 
 
