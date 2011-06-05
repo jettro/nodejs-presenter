@@ -1,5 +1,6 @@
-p available slides
+div#title available presentations
 ul
-    - each slide,index in slides
+    - each presentation,index in presentations
         li
-            a(href='/slide/' + (index + 1)) #{slide}
+            a(href=presentation.urlIdentifier + '/slide/' + (index + 1)) #{presentation.title}
+            div.description #{presentation.description}

@@ -47,6 +47,10 @@ img.shadow {
     box-shadow: 10px 10px 5px #888;
     margin-top:20px;
 }
+
+div.description {
+    font-size: smaller;
+}
 /* Positioning the different components */
 #fullscreen {
     min-height: 100%;
