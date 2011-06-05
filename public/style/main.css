@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+    /*font-size: 24pt;*/
 }
 
 blockquote {
@@ -50,6 +51,18 @@ img.shadow {
 
 div.description {
     font-size: smaller;
+}
+
+div.overview .description {
+    border: 1px solid #00008b;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 14pt;
+}
+
+.left {
+    text-indent: 20px;
+    text-align: left;
 }
 /* Positioning the different components */
 #fullscreen {

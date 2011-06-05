@@ -20,5 +20,5 @@ html(lang="en")
                 div#counter
                     slide #{numSlide} from #{totalSlide}
                 div#commandline
-                    form(action="/slide/"+numSlide,method="POST")
+                    form(action="/presentation/"+urlIdentifier+"/slide/"+numSlide,method="POST")
                         input(type="text", size="100", name="command", id="command")

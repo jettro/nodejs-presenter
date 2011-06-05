@@ -1,0 +1,10 @@
+#title #{presentation.title}
+
+    .overview
+        .description #{presentation.description}
+
+.left available slides
+ul
+    - each slide,index in presentation.slides
+        li
+            a(href='/presentation/' + presentation.urlIdentifier + '/slide/' + index + 1) #{slide.title}
