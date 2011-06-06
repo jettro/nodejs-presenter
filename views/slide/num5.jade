@@ -1,9 +1,0 @@
-pre(class="brush: js")
-    | app.get('/', function(req, res) {
-    |     res.render('index',
-    |         {locals: {slides:slide.allSlides()}});
-    | });
-    | app.get('/slide/:id', slide.index);
-    | app.post('/slide/:id', slide.command);
-script(type="text/JavaScript")
-    | SyntaxHighlighter.all()
