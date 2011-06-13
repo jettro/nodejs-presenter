@@ -1,0 +1,13 @@
+{
+    "name":"gs-nodejspresenter",
+    "description":"An application to show presentations via your browser",
+    "version":"0.9.0",
+    "author":"Jettro Coenradie <jettro@gridshore.nl>",
+    "dependencies":{
+        "express":"",
+        "jade":"",
+        "":""
+    },
+    "main":"app.js"
+
+}

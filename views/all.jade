@@ -1,0 +1,10 @@
+div#All slides
+h2 #{presentation.title}
+
+ul
+    - each slide in presentation.slides
+        - var slideTemplate = presentation.urlIdentifier + '/slide/' + slide.identifier
+        .slideAll
+            - if(typeof(slide.title) != "undefined")
+                div.title #{slide.title}
+            !=partial(slideTemplate, {'urlIdentifier':presentation.urlIdentifier})

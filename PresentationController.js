@@ -63,6 +63,12 @@ PresentationController.prototype.command = function(req, res) {
     res.redirect('/presentation/' + urlIdentifier + '/slide/' + id);
 };
 
+PresentationController.prototype.allSlides = function(req, res) {
+    var presentation = obtainPresentation(req.params.urlIdentifier);
+
+    res.render('all', {locals: {presentation:presentation}});
+};
+
 /* Helper functions */
 function obtainPresentation(urlIdentifier) {
     var len = presentations.length;

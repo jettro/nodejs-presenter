@@ -64,6 +64,22 @@ div.overview .description {
     text-indent: 20px;
     text-align: left;
 }
+
+.slideAll {
+    border-bottom: 1px solid #00008b;
+    font-size: 16px;
+}
+.slideAll .title {
+    text-align: center;
+    font-size: 24pt;
+    padding: 20px;
+}
+
+.slideAll .blockquote {
+    font-size: 24pt;
+    padding: 0;
+}
+
 /* Positioning the different components */
 #fullscreen {
     min-height: 100%;

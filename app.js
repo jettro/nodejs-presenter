@@ -20,8 +20,8 @@ createPresentationNodejs.push(new Slide("thefuture","The Future"));
 createPresentationNodejs.push(new Slide("questions","Questions"));
 
 presentationController.addPresentation(new Presentation("Creating a presentation with Node.js","create-presentation-nodejs",createPresentationNodejs,
-    "For my work I had to prepare a short presentation of around 10 minutes. I decided to create a tool to create presentation with and present about " +
-            "it. This is the result, a short presentation showing some of the ideas."));
+    "For my work I had to prepare a short presentation of around 10 minutes. I decided to create a tool to create presentation " +
+            "with and present about it. This is the result, a short presentation showing some of the ideas."));
 
 app.configure(function() {
     app.set('view engine', 'jade');
@@ -36,6 +36,7 @@ app.get('/', presentationController.allPresentations);
 app.get('/presentation/:urlIdentifier', presentationController.index);
 app.get('/presentation/:urlIdentifier/slide/:id', presentationController.slide);
 app.post('/presentation/:urlIdentifier/slide/:id', presentationController.command);
+app.get('/presentation/:urlIdentifier/all', presentationController.allSlides);
 
 app.listen(8018);
 console.log('Express server started on port %s', app.address().port);
